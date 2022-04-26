@@ -1,4 +1,4 @@
-{% set version = '2.1.4' %}
+{% set version = "2.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jtools/jtools_{{ version }}.tar.gz
-  sha256: 791c54be2791ef67659dd7957f771781ea01abc5b04bbc2f5a659cbf4e867ffd
+  sha256: 0e8062affcac19fee0b3533ac79c9ce71697b1ed87447d8b6001bc46abb44ea9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -53,13 +53,11 @@ test:
 about:
   home: https://jtools.jacob-long.com
   license: MIT
-  summary: This is a collection of tools that the author (Jacob) has written for the purpose
-    of more efficiently understanding and sharing the results of (primarily) regression
-    analyses. There are also a number of miscellaneous functions for statistical and
-    programming purposes. Just about everything supports models from the survey package.
+  summary: This is a collection of tools that the author (Jacob) has written for the purpose of more efficiently understanding and sharing the results of (primarily) regression analyses. There are also a number of miscellaneous functions for statistical and programming purposes. Just about everything supports models from
+    the survey package.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
 
 extra:
   recipe-maintainers:
