@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jtools/jtools_{{ version }}.tar.gz
-  sha256: 0e8062affcac19fee0b3533ac79c9ce71697b1ed87447d8b6001bc46abb44ea9
+  sha256: c30e9fce62762d04484db23f3d1ff390350fd8d8667cd4c3217aaac57dcb84fc
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
