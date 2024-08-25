@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jtools-feedst
 
 Home: https://jtools.jacob-long.com
 
-Package license: MIT
+Package license: GPL-3.0-or-later
 
 Summary: This is a collection of tools that the author (Jacob) has written for the purpose of more efficiently understanding and sharing the results of (primarily) regression analyses. There are also a number of miscellaneous functions for statistical and programming purposes. Just about everything supports models from the survey package.
 
