@@ -1,4 +1,4 @@
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jtools/jtools_{{ version }}.tar.gz
-  sha256: fefc6d30fae0bd3171b4c01fc6d0849cdd95f9488c72f9423f7dfeed2ecae911
+  sha256: ecbb0bc34fe8e714a815cc29e9813e5c312389975ed33262ff0c6f8b654e7015
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
