@@ -1,4 +1,4 @@
-{% set version = "2.3.1" %}
+{% set version = "2.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jtools/jtools_{{ version }}.tar.gz
-  sha256: ecbb0bc34fe8e714a815cc29e9813e5c312389975ed33262ff0c6f8b654e7015
+  sha256: 50b63b90995ead9eb78cc381f5255ee148ff9fa4ce5543342313719f67c6584a
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - r-magrittr
     - r-pander
     - r-pkgconfig
+    - r-reformulas >=0.4.2
     - r-rlang
     - r-sandwich
     - r-tibble
@@ -45,6 +46,7 @@ requirements:
     - r-magrittr
     - r-pander
     - r-pkgconfig
+    - r-reformulas >=0.4.2
     - r-rlang
     - r-sandwich
     - r-tibble
@@ -57,8 +59,8 @@ test:
 about:
   home: https://jtools.jacob-long.com
   license: GPL-3.0-or-later
-  summary: This is a collection of tools that the author (Jacob) has written for the purpose of more efficiently understanding and sharing the results of (primarily) regression analyses. There are also a number of miscellaneous functions for statistical and programming purposes. Just about everything supports models from
-    the survey package.
+  summary: This is a collection of tools that the author (Jacob) has written for the purpose of more efficiently understanding and sharing the results of (primarily) regression analyses. There are also a number of miscellaneous functions for statistical and programming purposes. Just about everything supports models 
+    from the survey package.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
