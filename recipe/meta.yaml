@@ -32,6 +32,7 @@ requirements:
     - r-magrittr
     - r-pander
     - r-pkgconfig
+    - r-reformulas >=0.4.2
     - r-rlang
     - r-sandwich
     - r-tibble
@@ -45,6 +46,7 @@ requirements:
     - r-magrittr
     - r-pander
     - r-pkgconfig
+    - r-reformulas >=0.4.2
     - r-rlang
     - r-sandwich
     - r-tibble
